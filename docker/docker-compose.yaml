@@ -4,6 +4,7 @@ services:
     container_name: flow_container
     volumes:
       - ./config.yaml:/flow/config.yaml  # 可选：挂载配置文件以便于修改
+      - ./logs:/flow/logs  # 可选：挂载日志目录以便于查看日志
     ports:
       - "8888:8888"  # 如果你的应用需要暴露端口，可以修改端口号
       - "6666:6666"
