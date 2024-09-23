@@ -1,0 +1,33 @@
+logs/
+stress_test.go
+
+# Go binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build cache
+*.out
+*.test
+*.prof
+
+# Go module files
+vendor/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage files
+*.cover
+*.cov

@@ -1,0 +1,26 @@
+handle:
+  request_threshold: 100
+  block_duration: 5m
+  request_timeout: 5s
+server:
+  enable_tcp: true
+  enable_udp: true
+  tcp_port: 6001
+  udp_port: 8888
+  internal_tcp_addr: "127.0.0.1:5666"
+  internal_udp_addr: "127.0.0.1:5888"
+web_server:
+  enable_http: true
+  enable_tls: false
+  host_addr: "0.0.0.0:8080"
+  cert_file: ""
+  key_file: ""
+  remote_addr: "127.0.0.1:80"
+log:
+  level_file: "warn"
+  level_console: "info"
+  path: "logs/access.log"
+  max_size: 5
+  max_age: 10
+  max_backups: 5
+  compress: true
